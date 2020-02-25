@@ -491,6 +491,7 @@ function js_beautify(js_source_text, options) {
 
         if (c === "'" || // string
         c === '"' || // string
+        c === '`' || // string
         (c === '/' &&
             ((last_type === 'TK_WORD' && is_special_word(last_text)) ||
                 (last_text === ')' && in_array(flags.previous_mode, ['(COND-EXPRESSION)', '(FOR-EXPRESSION)'])) ||
